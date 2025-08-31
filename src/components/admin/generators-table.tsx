@@ -110,7 +110,8 @@ const GeneratorRow: FC<{
   }, [generator.units]);
 
   const hasMultipleUnits = generator.units.length > 1;
-
+  console.log(generator, "generator");
+  
   return (
     <>
       <TableRow>
