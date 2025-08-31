@@ -15,7 +15,7 @@ type AppData = {
 }
 
 // Set the path to the data.json file
-const dataPath = path.join(process.cwd(), "public", "data.json");
+const dataPath = path.join(process.cwd(), "data.json");
 
 // Helper function to read the data from the JSON file
 async function readData(): Promise<AppData> {
