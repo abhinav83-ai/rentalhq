@@ -135,9 +135,39 @@
       "address": "789 Pine Ln, Capital City, IL",
       "totalBookings": 1,
       "type": "Online"
+    },
+    {
+      "id": "C004",
+      "totalBookings": 1,
+      "name": "Abhinav Awasthi",
+      "phone": "09935787579",
+      "address": "Ramnagar, Mandhana\nRamnagar, Mandhana",
+      "type": "Online"
     }
   ],
   "bookings": [
+    {
+      "id": "B004",
+      "customerId": "C004",
+      "customerName": "Abhinav Awasthi",
+      "generatorId": "M001",
+      "generatorName": "CAT G3516 (x2)",
+      "startDate": "2025-09-03T18:42:42.309Z",
+      "endDate": "2025-10-21T18:30:00.000Z",
+      "totalCost": 49000,
+      "bookedUnits": [
+        {
+          "id": "G001",
+          "serialNumber": "CAT-2023-001"
+        },
+        {
+          "id": "G008",
+          "serialNumber": "CAT-2023-004"
+        }
+      ],
+      "source": "Online",
+      "status": "Pending"
+    },
     {
       "id": "B001",
       "customerName": "Alice Johnson",

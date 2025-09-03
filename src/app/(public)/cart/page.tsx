@@ -55,16 +55,14 @@ export default function CartPage() {
   const { cart, updateQuantity, removeFromCart, clearCart, getTotalCost } = useCart();
   const [date, setDate] = useState<DateRange | undefined>({ from: new Date(), to: addDays(new Date(), 7)});
   const [showOtpDialog, setShowOtpDialog] = useState(false);
-  const [showConfirmationDialog, setShowConfirmationDialog] = useState(false);
   const [otp, setOtp] = useState('');
-  const [bookingId, setBookingId] = useState('');
   
   const [showOutOfStockModal, setShowOutOfStockModal] = useState(false);
   const [outOfStockGenerator, setOutOfStockGenerator] = useState<Generator | null>(null);
 
   const form = useForm<BookingFormValues>({
     resolver: zodResolver(bookingSchema),
-    defaultValues: { dates: { from: date?.from, to: date?.to }},
+    defaultValues: { dates: { from: date?.from, to: date?.to } },
   });
 
   const totalCost = getTotalCost(date);
@@ -115,7 +113,6 @@ export default function CartPage() {
     });
     
     const newBookingId = 'B' + String(Math.random()).substring(2, 8);
-    setBookingId(newBookingId);
 
     // Create a single booking for the entire cart
     await addBooking({
@@ -131,14 +128,8 @@ export default function CartPage() {
     });
     
     clearCart();
-    setShowOtpDialog(false);
-    setShowConfirmationDialog(true);
+    router.push(`/confirmation?bookingId=${newBookingId}`);
   };
-
-  const handleConfirmationClose = () => {
-      setShowConfirmationDialog(false);
-      router.push(`/confirmation?bookingId=${bookingId}`);
-  }
 
   if (cart.length === 0) {
     return (
@@ -270,20 +261,6 @@ export default function CartPage() {
           <AlertDialogFooter>
             <AlertDialogCancel>Cancel</AlertDialogCancel>
             <AlertDialogAction onClick={handleOtpVerification} disabled={otp.length !== 6}>Verify & Book</AlertDialogAction>
-          </AlertDialogFooter>
-        </AlertDialogContent>
-      </AlertDialog>
-
-      <AlertDialog open={showConfirmationDialog} onOpenChange={setShowConfirmationDialog}>
-        <AlertDialogContent>
-          <AlertDialogHeader>
-            <AlertDialogTitle>Booking Request Sent!</AlertDialogTitle>
-            <AlertDialogDescription>
-              Your request has been submitted. We will contact you shortly to confirm availability and process payment.
-            </AlertDialogDescription>
-          </AlertDialogHeader>
-          <AlertDialogFooter>
-            <AlertDialogAction onClick={handleConfirmationClose}>View Confirmation</AlertDialogAction>
           </AlertDialogFooter>
         </AlertDialogContent>
       </AlertDialog>
