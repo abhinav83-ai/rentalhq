@@ -1,111 +1,106 @@
 {
   "generators": [
     {
-      "id": "M001",
-      "name": "CAT G3516",
-      "capacity": 1500,
-      "pricePerDay": 500,
-      "pricePerMonth": 12000,
-      "imageUrl": "https://picsum.photos/400/300",
+      "id": "IN001",
+      "name": "Kirloskar Green KG12",
+      "capacity": 12,
+      "pricePerDay": 1200,
+      "pricePerMonth": 30000,
+      "imageUrl": "https://picsum.photos/400/300?random=101",
       "fuelType": "Diesel",
       "featured": true,
-      "description": "A high-performance diesel generator suitable for large-scale industrial needs. Reliable and efficient.",
+      "description": "Reliable portable diesel genset by Kirloskar — widely used in residential and light commercial settings.",
       "units": [
         {
-          "id": "G001",
-          "serialNumber": "CAT-2023-001",
+          "id": "IN-G001",
+          "serialNumber": "KG12-001",
           "status": "Available"
         },
         {
-          "id": "G002",
-          "serialNumber": "CAT-2023-002",
+          "id": "IN-G002",
+          "serialNumber": "KG12-002",
           "status": "Rented"
-        },
+        }
+      ]
+    },
+    {
+      "id": "IN002",
+      "name": "Mahindra Powerol DS200",
+      "capacity": 200,
+      "pricePerDay": 2500,
+      "pricePerMonth": 60000,
+      "imageUrl": "https://picsum.photos/400/300?random=102",
+      "fuelType": "Diesel",
+      "featured": true,
+      "description": "Robust diesel generator for mid-size commercial and construction use from Mahindra Powerol.",
+      "units": [
         {
-          "id": "G003",
-          "serialNumber": "CAT-2023-003",
+          "id": "IN-G003",
+          "serialNumber": "DS200-001",
+          "status": "Available"
+        }
+      ]
+    },
+    {
+      "id": "IN003",
+      "name": "Ashok Leyland Silent DG 500",
+      "capacity": 500,
+      "pricePerDay": 8000,
+      "pricePerMonth": 200000,
+      "imageUrl": "https://picsum.photos/400/300?random=103",
+      "fuelType": "Diesel",
+      "featured": false,
+      "description": "Silent DG set by Ashok Leyland — high capacity, noise-reduced, suitable for sensitive environments.",
+      "units": [
+        {
+          "id": "IN-G004",
+          "serialNumber": "SLDG500-001",
           "status": "Maintenance"
         },
         {
-          "id": "G008",
-          "serialNumber": "CAT-2023-004",
+          "id": "IN-G005",
+          "serialNumber": "SLDG500-002",
           "status": "Available"
         }
       ]
     },
     {
-      "id": "M002",
-      "name": "Cummins QSK60",
-      "capacity": 2000,
-      "pricePerDay": 750,
-      "pricePerMonth": 18000,
-      "imageUrl": "https://picsum.photos/400/301",
+      "id": "IN004",
+      "name": "Jakson 50 kVA DG",
+      "capacity": 50,
+      "pricePerDay": 1800,
+      "pricePerMonth": 45000,
+      "imageUrl": "https://picsum.photos/400/300?random=104",
       "fuelType": "Diesel",
       "featured": true,
-      "description": "Top-of-the-line power generation for critical applications. Unmatched performance and durability.",
+      "description": "50 kVA diesel genset from Jakson, ideal for events or commercial needs where reliable power is key.",
       "units": [
         {
-          "id": "G004",
-          "serialNumber": "CUM-2023-001",
+          "id": "IN-G006",
+          "serialNumber": "JK50-001",
           "status": "Available"
+        },
+        {
+          "id": "IN-G007",
+          "serialNumber": "JK50-002",
+          "status": "Rented"
         }
       ]
     },
     {
-      "id": "M003",
-      "name": "Generac SD200",
-      "capacity": 200,
-      "pricePerDay": 150,
-      "pricePerMonth": 3500,
-      "imageUrl": "https://picsum.photos/400/302",
+      "id": "IN005",
+      "name": "Honda EX2400 (Petrol)",
+      "capacity": 1.8,
+      "pricePerDay": 1500,
+      "pricePerMonth": 35000,
+      "imageUrl": "https://picsum.photos/400/300?random=105",
       "fuelType": "Petrol",
       "featured": false,
-      "description": "A versatile and portable petrol generator, perfect for residential backup or small events.",
+      "description": "Compact petrol generator by Honda — portable and quieter, perfect for light residential or event usage.",
       "units": [
         {
-          "id": "G005",
-          "serialNumber": "GEN-2023-001",
-          "status": "Rented"
-        }
-      ]
-    },
-    {
-      "id": "M004",
-      "name": "Kohler KD1000",
-      "capacity": 1000,
-      "pricePerDay": 400,
-      "pricePerMonth": 9500,
-      "imageUrl": "https://picsum.photos/400/303",
-      "fuelType": "Diesel",
-      "featured": true,
-      "description": "A powerful and compact diesel generator, ideal for mid-sized commercial or construction use.",
-      "units": [
-        {
-          "id": "G006",
-          "serialNumber": "KOH-2023-001",
-          "status": "Maintenance"
-        },
-        {
-          "id": "G007",
-          "serialNumber": "KOH-2023-002",
-          "status": "Available"
-        }
-      ]
-    },
-    {
-      "id": "M005",
-      "featured": false,
-      "description": "",
-      "name": "Abhinav Awasthi",
-      "capacity": 20,
-      "pricePerDay": 2,
-      "pricePerMonth": 2,
-      "imageUrl": "https://picsum.photos/400/304",
-      "fuelType": "Diesel",
-      "units": [
-        {
-          "id": "U1756575251897",
-          "serialNumber": "222",
+          "id": "IN-G008",
+          "serialNumber": "EX2400-001",
           "status": "Available"
         }
       ]
@@ -135,9 +130,35 @@
       "address": "789 Pine Ln, Capital City, IL",
       "totalBookings": 1,
       "type": "Online"
+    },
+    {
+      "id": "C004",
+      "totalBookings": 1,
+      "name": "Abhinav Awasthi",
+      "phone": "09935787579",
+      "address": "Ramnagar, Mandhana\nRamnagar, Mandhana",
+      "type": "Online"
     }
   ],
   "bookings": [
+    {
+      "id": "B004",
+      "customerId": "C004",
+      "customerName": "Abhinav Awasthi",
+      "generatorId": "IN001",
+      "generatorName": "Kirloskar Green KG12 (x1)",
+      "startDate": "2025-09-03T18:26:15.749Z",
+      "endDate": "2025-09-10T18:26:15.749Z",
+      "totalCost": 9600,
+      "bookedUnits": [
+        {
+          "id": "IN-G001",
+          "serialNumber": "KG12-001"
+        }
+      ],
+      "source": "Online",
+      "status": "Pending"
+    },
     {
       "id": "B001",
       "customerName": "Alice Johnson",
@@ -227,6 +248,15 @@
     }
   ],
   "inquiries": [
+    {
+      "id": "I003",
+      "date": "2025-09-01T07:37:23.787Z",
+      "status": "Contacted",
+      "customerName": "asdsdf",
+      "customerPhone": "2131231233321",
+      "generatorId": "M002",
+      "generatorName": "Cummins QSK60"
+    },
     {
       "id": "I002",
       "date": "2025-08-30T17:56:38.079Z",
